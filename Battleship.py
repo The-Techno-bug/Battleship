@@ -449,10 +449,8 @@ def loseScreen():
     gradientBg((30, 30, 60), (0, 119, 190))
     Battle = titleFont.render("YOU LOST! :(", True, (255, 80, 80))
     ship = titleFont.render("Play again?", True, (255, 255, 255))
-    sad_face = titleFont.render("💀", True, (255, 80, 80))
     screen.blit(Battle, Battle.get_rect(center=(WIDTH // 2, 100)))
-    screen.blit(sad_face, sad_face.get_rect(center=(WIDTH // 2, 180)))
-    screen.blit(ship, ship.get_rect(center=(WIDTH // 2, 260)))
+    screen.blit(ship, ship.get_rect(center=(WIDTH // 2, 180)))
     restartButton.drawSelf()
     quitButton.drawSelf()
 
@@ -460,10 +458,8 @@ def winScreen():
     gradientBg((0, 180, 255), (0, 119, 190))
     Battle = titleFont.render("YOU WIN!!", True, (0, 255, 127))
     ship = titleFont.render("Play again?", True, (255, 255, 255))
-    trophy = titleFont.render("🏆", True, (255, 215, 0))
     screen.blit(Battle, Battle.get_rect(center=(WIDTH // 2, 100)))
-    screen.blit(trophy, trophy.get_rect(center=(WIDTH // 2, 180)))
-    screen.blit(ship, ship.get_rect(center=(WIDTH // 2, 260)))
+    screen.blit(ship, ship.get_rect(center=(WIDTH // 2, 180)))
     restartButton.drawSelf()
     quitButton.drawSelf()
 
